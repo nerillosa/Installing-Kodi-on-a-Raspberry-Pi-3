@@ -7,7 +7,7 @@ spi = spidev.SpiDev() # create spi object
 spi.open(0, 0) # open spi port 0, device (CS) 0
 try:
 	while True:
-		for num in range(0,127):
+		for num in range(45,127):
         		frame = bytearray()
         		frame.append(0)
         		frame.append(num)
@@ -17,7 +17,7 @@ try:
         
 		time.sleep(0.5) # sleep for 0.5 seconds
 
-        	for num in range(127,0, -1):
+        	for num in range(127,45, -1):
                 	frame = bytearray()
                 	frame.append(0)
                 	frame.append(num)
