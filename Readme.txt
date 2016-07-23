@@ -15,5 +15,5 @@ before the LED starts lighting, the program loops between the values of 60-127 i
 
 Follow the instructions to install spidev here: http://tightdev.net/SpiDev_Doc.pdf
 
-You can see a demo of this project at : https://www.youtube.com/watch?v=p5YHSxK8M4E
+You can see a demo of this project at : https://youtu.be/UIZzLAC2wYI
 
