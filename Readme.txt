@@ -12,3 +12,5 @@ Since there is a threshold of voltage that needs to be overcome before the LED s
 
 Follow the instructions to install spidev here: http://tightdev.net/SpiDev_Doc.pdf
 
+You can see a demo of this project at : https://www.youtube.com/watch?v=p5YHSxK8M4E
+
