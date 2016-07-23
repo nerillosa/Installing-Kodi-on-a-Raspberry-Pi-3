@@ -10,7 +10,7 @@ frame = bytearray([0,0]) # The first byte is the control byte and in this applic
 #the following while loop will assign values to the second byte of the frame sent to SPI bus
 try:
 	while True:
-		for num in range(60,127):
+		for num in range(45,127):
         		frame[1] = num
 			resp = spi.xfer2(frame)
 			time.sleep(0.05) # sleep for 0.05 seconds (1/20)
@@ -18,7 +18,7 @@ try:
         
 		time.sleep(0.5) # sleep for 0.5 seconds
 
-        	for num in range(127,60, -1):
+        	for num in range(127,45, -1):
         		frame[1] = num
                 	resp = spi.xfer2(frame)
                 	time.sleep(0.05) # sleep for 0.05 seconds
