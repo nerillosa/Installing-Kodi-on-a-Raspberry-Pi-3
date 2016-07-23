@@ -2,6 +2,7 @@
 
 This project follows what was done here : 
 http://www.learningaboutelectronics.com/Articles/MCP4131-digital-potentiometer-circuit.php
+It has a very concise and good explanation of SPI serial bus communication.
 
 The ultimate objective of this project is to use the digital pot to mute and change the volume of a speaker attached to an Epson projector. This is basically the proof of concept of the functionality. Very impressed with the simplicity and power of the serial SPI bus. 
 
