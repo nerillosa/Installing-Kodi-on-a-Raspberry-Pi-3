@@ -8,8 +8,8 @@ The ultimate objective of this project is to use the digital pot to mute and cha
 This is basically the proof of concept of the functionality. Very impressed with the simplicity and power of the serial SPI bus. 
 
 The main differences between this project and the url referenced above is that I am using a Raspberry Pi instead of an Arduino.
-I am also programming in Python as opposed to C. 
-Another difference is that since my digital pot is rated at 100k, I used a transistor in the output wired as a voltage follower. 
+I am also programming in Python as opposed to C. Another difference is that since my digital pot is rated at 100k, 
+I used a transistor in the output wired as a voltage follower. 
 Since there is a threshold of voltage that needs to be overcome before the LED starts lighting, 
 the program loops between the values of 45-127 instead of the full range of 0-127.
 
