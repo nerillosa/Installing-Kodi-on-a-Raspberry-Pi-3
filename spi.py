@@ -12,7 +12,7 @@ try:
 		for num in range(45,127):
         		frame[1]=num
 			resp = spi.xfer2(frame)
-			time.sleep(0.05) # sleep for 0.1 seconds
+			time.sleep(0.05) # sleep for .05 seconds (1/20th of a second)
 		#end for
         
 		time.sleep(0.5) # sleep for 0.5 seconds
@@ -20,7 +20,7 @@ try:
         	for num in range(127,45, -1):
         		frame[1]=num
                 	resp = spi.xfer2(frame)
-                	time.sleep(0.05) # sleep for 0.1 seconds
+                	time.sleep(0.05)
         	#end for
 	#end While
 
