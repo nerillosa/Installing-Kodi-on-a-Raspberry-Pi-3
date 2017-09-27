@@ -8,3 +8,4 @@ I bought this one from amazon: https://www.amazon.com/gp/product/B01D92SSX6/ref=
 * For initial setup you will need a USB keyboard and mouse. After setup, you can control Kodi from your smartphone using free apps like Kodi Remote on Android which will run on your internal WiFi network.
 * Finally, you will need to have an HDMI TV (plus HDMI cable) and a Wifi home network up and running to which the RPI3 can connect in order to download videos and music and stream live to your TV.
 
+![Alt text](images/raspberrypi_connected.jpg?raw=true "Raspberry Pi connected and running")
