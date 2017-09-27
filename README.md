@@ -9,3 +9,4 @@ I bought this one from amazon: https://www.amazon.com/gp/product/B01D92SSX6/ref=
 * Finally, you will need to have an HDMI TV (plus HDMI cable) and a Wifi home network up and running to which the RPI3 can connect in order to download videos and music and stream live to your TV.
 ## This is how a connected RPI3 inside a clear case looks like:
 <img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/raspberrypi_connected.jpg" width="500">
+## More to come, work in progress.....
