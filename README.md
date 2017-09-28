@@ -17,6 +17,7 @@ There are several Operating Systems of choice, which you can choose by running t
 As of this writing the ISO file name is: rpd_x86-2017-06-23/2017-06-22-rpd-x86-jessie.iso<br>
 Don't be confused with the x86 in the name. The RPI3 is a 64 bit computer running a 32 bit operating system.
 You will need to write this image file to the blank SD card.
+
 _WRITING AN IMAGE TO THE SD CARD_ <br>
 
 You will need to use an image writing tool to install the image you have downloaded on your SD card.
