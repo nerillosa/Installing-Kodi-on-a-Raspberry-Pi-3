@@ -18,9 +18,9 @@ As of this writing the ISO file name is: rpd_x86-2017-06-23/2017-06-22-rpd-x86-j
 Don't be confused with the x86 in the name. The RPI3 is a 64 bit computer running a 32 bit operating system.
 You will need to write this image file to the blank SD card.
 
-_WRITING AN IMAGE TO THE SD CARD_ <br>
+_WRITING AN ISO IMAGE TO THE SD CARD_ <br>
 
-You will need to use an image writing tool to install the image you have downloaded on your SD card.
+You will need to use an ISO image writing tool to install the image you have downloaded on your SD card. Once you write this binary image to the SD card and insert it in the Raspberry Pi, the Pi will boot up to the desktop operating system.
 There are many Image writing programs out there. I chose Etcher which is free and can be downloaded at https://etcher.io/ <br>
 Etcher is a graphical SD card writing tool that works on Mac OS, Linux and Windows, and is the easiest option for most users. To write your image with Etcher:
 * Download Etcher and install it.
