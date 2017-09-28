@@ -22,7 +22,8 @@ _WRITING AN ISO IMAGE TO THE SD CARD_ <br>
 
 You will need to use an ISO image writing tool to install the image you have downloaded on your SD card. Once you write this binary image to the SD card and insert it in the Raspberry Pi, the Pi will boot up to the desktop operating system.
 There are many Image writing programs out there. I chose Etcher which is free and can be downloaded at https://etcher.io/ <br>
-Etcher is a graphical SD card writing tool that works on Mac OS, Linux and Windows, and is the easiest option for most users. To write your image with Etcher:
+Etcher is a graphical SD card writing tool that works on Mac OS, Linux and Windows, and is the easiest option for most users. If your computer does not have an SD card port, you will need to acquire a SD card USB adapter like this one: https://www.amazon.com/gp/product/B006T9B6R2/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1 <br>
+To write your image with Etcher:
 * Download Etcher and install it.
 * Connect an SD card reader with the SD card inside.
 * Open Etcher and select from your hard drive the Raspberry Pi iso image you downloaded previously.
