@@ -13,5 +13,5 @@ The top two connectors are the HDMI cable to TV and the USB power supply cord. T
 <img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/raspberrypi_connected.jpg" width="500">
 ## Loading of the Raspbian desktop Operating System (OS) on the SD card
 There are several Operating Systems of choice, which you can choose by running NOOBS. I chose to load the Raspberry Pi desktop OS. Go to https://www.raspberrypi.org/downloads/ and click on the RASPBERRY PI DESKTOP link and then on the "Download ISO" link. This will download the OS image onto your computer.
-![ISO download link](images/iso_download.jpg?raw=true "ISO download")
+![ISO download link](images/iso_download.JPG?raw=true "ISO download")
 ## More to come, work in progress.....
