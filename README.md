@@ -31,7 +31,7 @@ To write your image with Etcher:
 * Select the SD card you wish to write your image to.
 * Review your selections and click 'Flash!' to begin writing data to the SD card.
 
-__Booting up the Raspberry Pi for the first time__ <br>
+__BOOTING UP THE RASPBERRY PI FOR THE FIRST TIME__ <br>
 
 Once the ISO image file has been written to the SD card, it is time to boot up the RPI3. 
 
