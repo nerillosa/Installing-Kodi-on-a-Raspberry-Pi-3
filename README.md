@@ -48,9 +48,13 @@ You should see the following screen. Click on "Change Password" and change the d
 <br><br>
 <img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/password.jpg" width="500">
 
+Click on "Localization" and configure Locale, Timezone, Keyboard, and WiFi country to your respective preferences. 
+In my case I have:
 
-
-
+* Locale: Language-en(English), Country-US(United States), Character Set- UTF-8
+* Timezone: Area-America, Location-Phoenix
+* Keyboard: Country-United States, Variant-English(US, international)
+* WiFi Country: US United States
 
 
 
