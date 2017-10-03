@@ -59,7 +59,7 @@ In my case I have:
 Last but not least, you need to connect the RPI3 to your internal home WiFi network. Make sure you have your WiFi password handy and click on the WiFi icon at the top right of the RPI3 screen and choose your WiFi SSID from the list that appears. It will ask for the password to connect. Enter your WiFi password and you are connected to the Internet.
 
 __For advanced users:__ <br>
-To connect to your RPI3 remotely from any other computer on your same home WiFi network using SSH (putty for example), you will need to enable SSH.
+To connect to your RPI3 remotely from any other computer on your same home WiFi network using SSH (putty or bitvise for windows), you will need to enable SSH.
 To do this go to the "Raspberry Pi Configuration" popup again and instead of clicking on "Localization", click on "Interfaces". Hit the enable radio button for the SSH entry and then click on "Ok". You can now connect to your RPI3 using the IP address that your router has assigned to your RPI3: pi@192.168.0.8 in my case. An easy way to find out the IP address that your RPI3 has is to open a terminal (click on the black terminal icon on the top of the screen) and type ifconfig.
 You should see your IP address next to the wlan0 entry as inet: 192.168.0.8  (in my case):
 <br><br>
