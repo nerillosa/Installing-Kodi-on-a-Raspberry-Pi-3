@@ -44,7 +44,7 @@ The RPI3 should boot up and you should see a blank linux desktop. The first thin
 <br><br>
 <img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/linux_desktop.jpg" width="750">
 
-You should see the following screen. Click on "Change Password" and change the default password which is normally "raspberry". 
+You should see the following screen. For security purposes you should always change the default password which is normally "raspberry". Click on "Change Password" button and change the password to something of your choice. 
 <br><br>
 <img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/password.jpg" width="500">
 
