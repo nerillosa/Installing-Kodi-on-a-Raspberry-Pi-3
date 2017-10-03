@@ -42,7 +42,7 @@ Do the following in order, plugging in the power last.
 
 The RPI3 should boot up and you should see a blank linux desktop. The first thing you need to do before installing Kodi is to conifgure basic settings like your timezone, the keyboard type, and the language to use. Hover your mouse over the raspberry on the top left of the screen and select Preferences from the ensuing dropdown and then Raspberry Pi Configuration:
 <br><br>
-<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/linux_desktop.jpg" width="500">
+<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/linux_desktop.jpg" width="750">
 
 
 
