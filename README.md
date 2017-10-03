@@ -34,11 +34,14 @@ To write your image with Etcher:
 __BOOTING UP THE RASPBERRY PI FOR THE FIRST TIME__ <br>
 
 Once the ISO image file has been written to the SD card, it is time to boot up the RPI3. 
+Do the following in order, plugging in the power last. 
+* Insert the micro SD card into the memory card slot of the RPI3.
+* Plug in a HDMI cable between the RPI3 and your TV and turn on the TV.
+* Plug in a USB mouse and keyboard to your RPI3.
+* Plug in the power supply between the your RPI3 and a power outlet.
 
-* Insert the micro SD card into the memory card slot of the RPI3
-* Plug in a HDMI cable between the RPI3 and your TV
-* Plug in the power supply between the your RPI3 and a power outlet
-* Plug in a USB mouse and keyboard to your RPI3
+The RPI3 should boot up and you should see a screen similar to the following:
+
 
 
 
