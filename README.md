@@ -56,8 +56,13 @@ In my case I have:
 * Keyboard: Country-United States, Variant-English(US, international)
 * WiFi Country: US United States
 
+Last but not least, you need to connect the RPI3 to you internal home Wifi. Make sure you have your WiFi password handy and click on the wifi icon at the top right of the RPI3 screen and choose your WiFi SSID from the list that appears. It will ask for the password to connect. Enter your WiFi password and you are connected to the Internet.
 
-
+For advanced users:<br> If you would like to connect to your RPI3 remotely using SSH (putty for example), you will need to enable SSH.
+To do this go to the "Raspberry Pi Configuration" popup again and instead of clicking on "Localization", click on "Interfaces". Hit the enable radio button for the SSH entry and then click on "Ok". You can now connect to your RPI3 using the IP address that your router has assigned to your RPI3: pi@192.168.0.8 in my case. An easy way to find out the IP address that your RPI3 has is to open a terminal (click on the black terminal icon on the top of the screen) and type ifconfig.
+You should see your IP address next to the wlan0 entry as inet: 192.168.0.8  (in my case):
+<br><br>
+<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/terminal.jpg" width="500">
 
 
 ## More to come, work in progress.....
