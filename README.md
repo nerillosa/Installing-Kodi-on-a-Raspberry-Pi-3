@@ -69,7 +69,7 @@ You should see your IP address next to the wlan0 entry as inet: 192.168.0.8  (in
 ## Installing Kodi on a RPI3 running the Raspbian desktop OS
 
 Installing the Kodi Media Center on the Raspberry Pi is super easy and only requires one command to install it on your system. There will be a few configurations you will have to do after to make it work properly as well as updating Kodi if you would like. Run the following command in a terminal window on your Raspberry Pi, it can also be run over SSH:
-   __sudo apt-get install__ kodi <br>
+  <p align="center"> __sudo apt-get install__ kodi </p>
 That’s basically it. This will grab the latest stable compiled version of Kodi built for Raspbian. It grabs the files from the official Raspbian Repositories. The download should be around 200MB so it will take a while. It will also download some dependencies and install them.
 
 
