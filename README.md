@@ -86,7 +86,7 @@ Let’s go to the bottom of the configuration file and add the following 2 lines
 
 <strong>gpu_mem=256 <br>start_x=1</strong>
 
-Save the file (Ctrl-x --> Yes --> Enter) and exit the nano editor.
+Save the file (Ctrl-x --> Y --> Enter) and exit the nano editor.
 Now simply reboot with the command _"sudo reboot now"_ and you have successfully installed Kodi on the Raspberry Pi 3.
 
 **RUN KODI ON STARTUP**
@@ -94,7 +94,7 @@ Now simply reboot with the command _"sudo reboot now"_ and you have successfully
 At this point you should see KODI as an installed program under "Sound & Video" in the desktop.
 If you want KODI to run on startup instead of the RPI3 booting up on the Desktop you can accomplish this by various ways. The way I did it was to create a launch script to run from the RPI3 startup script. Do the following:
 Open a terminal (Ctrl-Alt-T) and create a launch script by typing: _"sudo nano /home/pi/.kodi/system/launch.sh"_ and hitting Enter.
-Add the following 2 lines in the nano editor and save the file (Ctrl-x --> Yes --> Enter).<br>
+Add the following 2 lines in the nano editor and save the file (Ctrl-x --> Y --> Enter).<br>
 
 <strong>#!/bin/bash<br>
 /usr/bin/kodi-standalone</strong><br>
