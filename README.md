@@ -110,7 +110,7 @@ Add the following line at the end of the script and save the file.<br>
 
 __/home/pi/.kodi/system/launch.sh__<br>
 
-This line will execute last and run the launch.sh script we created in the previous step which will launch Kodi.
+The startup script always runs on boot-up and the line above will execute last and call the launch.sh script we created in the previous step which will in turn launch Kodi.
 
 
 
