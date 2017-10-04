@@ -85,8 +85,7 @@ GPU_MEM is the GPU memory in megabytes. This value sets the memory split between
 Start_X will allow codec’s to be enable so that you can playback video’s in Kodi.
 Let’s go to the bottom of the configuration file and add the following 2 lines:
 
-gpu_mem=256 <br>
-start_x=1
+<strong>gpu_mem=256 <br>start_x=1</strong>
 
 Now simply reboot with "sudo reboot now" and you have successfully installed Kodi on the Raspberry Pi 3.
 
