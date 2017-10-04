@@ -95,6 +95,7 @@ At this point you should see KODI as an installed program under "Sound & Video" 
 If you want KODI to run on startup instead of booting up on the Desktop you can accomplish this by various ways. The way I did it was to create a launch script to run from the RPI3 startup script. Do the following:
 Open a terminal (Ctrl-Alt-T) and create a launch script by typing: _"sudo nano /home/pi/.kodi/system/launch.sh"_ and hitting Enter.
 Add the following 3 lines in the nano editor and save the file.<br>
+
 <strong>#!/bin/bash<br>
 cd /etc/openvpn<br>
 /usr/bin/kodi-standalone</strong><br>
