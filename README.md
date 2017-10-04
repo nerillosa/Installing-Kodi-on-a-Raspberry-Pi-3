@@ -80,7 +80,6 @@ The following steps are crucial and need to be done to get proper playback on th
 <p align="center"> <strong>sudo nano /boot/config.txt</strong> </p>
 
 This file contains some important configurations for our Raspberry Pi. Scroll all the way to the bottom of the file and create 2 new settings. One for GPU_MEM and one for Start_X.
-
 GPU_MEM is the GPU memory in megabytes. This value sets the memory split between the CPU and GPU. The CPU will get the remainer of the unused memory. We will be setting our value to 256 MB.
 Start_X will allow codec’s to be enable so that you can playback video’s in Kodi.
 Let’s go to the bottom of the configuration file and add the following 2 lines:
@@ -89,6 +88,22 @@ Let’s go to the bottom of the configuration file and add the following 2 lines
 
 Save the file (Ctrl-x --> Yes --> Enter) and exit the nano editor.
 Now simply reboot with "sudo reboot now" and you have successfully installed Kodi on the Raspberry Pi 3.
+
+**RUN KODI ON STARTUP**
+
+At this point you should see KODI as an installed program under "Audio and Sound" in the desktop.
+If you want KODI to run on startup instead of booting up on the Desktop you can accomplish this by various ways. The way I did it was to create a launch script to run from the RPI3 startup script. Do the following:
+Open a terminal (Ctrl-Alt-T) and create a launch script by typing: "sudo nano /home/pi/.kodi/system/launch.sh" and hitting Enter.
+Add the following 3 lines in the nano editor and save the file.<br>
+#!/bin/bash<br>
+cd /etc/openvpn<br>
+/usr/bin/kodi-standalone<br><br>
+The last line above runs Kodi by calling the command "kodi-standalone", which you can call from a terminal also.<br>
+Open the RPI3 startup script by typing: "sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart" and hitting Enter.
+Add the following line at the end of the script and save the file.<br>
+/home/pi/.kodi/system/launch.sh<br>
+This line will execute last and run the launch.sh script we created in the previous step which will launch Kodi.
+
 
 
 
