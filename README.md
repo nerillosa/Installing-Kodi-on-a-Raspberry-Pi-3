@@ -72,7 +72,23 @@ Installing the Kodi Media Center on the Raspberry Pi is super easy and only requ
 <p align="center"> <strong>sudo apt-get update<br>sudo apt-get install kodi</strong> </p><br>
 That’s basically it. This will grab the latest stable compiled version of Kodi built for Raspbian. It grabs the files from the official Raspbian Repositories. The download should be around 200MB so it will take a while. It will also download some dependencies and install them.
 
+**Important Raspberry Pi Boot Configs for Kodi**
 
+The following steps are crucial and need to be done to get proper playback on the Raspberry Pi. If you are having Kodi performance issues or Kodi is only playing audio and the video is black then it could be because of these settings in the Raspberry Pi’s /boot/config.txt’ file. Type the following command to edit the Raspberry Pi’s configuration file.
+
+sudo nano /boot/config.txt
+This file contains some important configurations for our Raspberry Pi. We can overclock the Raspberry Pi or change our HDMI or Audio settings. What we will be doing is scrolling all the way to the bottom of the file and creating 2 new settings. One for GPU_MEM and one for Start_X.
+
+GPU_MEM is the GPU memory in megabytes. This value sets the memory split between the CPU and GPU. The CPU will get the remainer of the unused memory. We will be setting our value to 256 MB.
+
+Start_X will allow codec’s to be enable so that you can playback video’s in Kodi.
+
+Let’s go to the bottom of the configuration file and add the following 2 lines:
+
+gpu_mem=256
+start_x=1
+
+Now simply reboot with "sudo reboot now" and you have successfully installed Kodi on the Raspberry Pi 3.
 
 
 
