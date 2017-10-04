@@ -87,7 +87,7 @@ Let’s go to the bottom of the configuration file and add the following 2 lines
 <strong>gpu_mem=256 <br>start_x=1</strong>
 
 Save the file (Ctrl-x --> Yes --> Enter) and exit the nano editor.
-Now simply reboot with "sudo reboot now" and you have successfully installed Kodi on the Raspberry Pi 3.
+Now simply reboot with the command _"sudo reboot now"_ and you have successfully installed Kodi on the Raspberry Pi 3.
 
 **RUN KODI ON STARTUP**
 
