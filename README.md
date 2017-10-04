@@ -105,8 +105,9 @@ Make the new launch script executable by running the following command:<br>
 
 __sudo chmod 700 /home/pi/.kodi/system/launch.sh__ <br> 
 
+You need to modify the RPI3 startup script next. You might want to save a copy of this file to your home folder _(sudo cp /home/pi/.config/lxsession/LXDE-pi/autostart ~)_ before modifying it. In case you make a mistake you can always restore the file from this copy.
 Open the RPI3 startup script by typing: _"sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart"_ and hitting Enter.
-Add the following line at the end of the script and save the file. MAke sure you do not make any errors as this file cannot get corrupted. <br> You might want to save a copy of this file to your home folder _"sudo cp /home/pi/.config/lxsession/LXDE-pi/autostart ~"_ before modifying it.<br>
+Add the following line at the end of the script and save the file. <br>
 
 __/home/pi/.kodi/system/launch.sh__<br>
 
