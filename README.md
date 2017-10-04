@@ -112,7 +112,7 @@ Add the following line at the end of the script and save the file. <br>
 __/home/pi/.kodi/system/launch.sh__<br>
 
 The startup script always runs on boot-up and the line above will execute last and call the launch.sh script we created in the previous step which will in turn launch Kodi.
-Reboot your RPI3 ("sudo reboot now"). Kodi should launch automatically at the end of boot-up.
+Reboot your RPI3 _(sudo reboot now)_. Kodi should launch automatically at the end of boot-up.
 
 
 
