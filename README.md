@@ -103,7 +103,9 @@ cd /etc/openvpn<br>
 The last line above runs Kodi by calling the command "kodi-standalone", which you can also call from a terminal.<br>
 Open the RPI3 startup script by typing: _"sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart"_ and hitting Enter.
 Add the following line at the end of the script and save the file.<br>
-/home/pi/.kodi/system/launch.sh<br>
+
+__/home/pi/.kodi/system/launch.sh__<br>
+
 This line will execute last and run the launch.sh script we created in the previous step which will launch Kodi.
 
 
