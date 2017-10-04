@@ -79,7 +79,7 @@ The following steps are crucial and need to be done to get proper playback on th
 
 <p align="center"> <strong>sudo nano /boot/config.txt</strong> </p>
 
-This file contains some important configurations for our Raspberry Pi. Scroll all the way to the bottom of the file and creating 2 new settings. One for GPU_MEM and one for Start_X.
+This file contains some important configurations for our Raspberry Pi. Scroll all the way to the bottom of the file and create 2 new settings. One for GPU_MEM and one for Start_X.
 
 GPU_MEM is the GPU memory in megabytes. This value sets the memory split between the CPU and GPU. The CPU will get the remainer of the unused memory. We will be setting our value to 256 MB.
 Start_X will allow codec’s to be enable so that you can playback video’s in Kodi.
