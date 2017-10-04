@@ -94,10 +94,9 @@ Now simply reboot with "sudo reboot now" and you have successfully installed Kod
 At this point you should see KODI as an installed program under "Sound & Video" in the desktop.
 If you want KODI to run on startup instead of the RPI3 booting up on the Desktop you can accomplish this by various ways. The way I did it was to create a launch script to run from the RPI3 startup script. Do the following:
 Open a terminal (Ctrl-Alt-T) and create a launch script by typing: _"sudo nano /home/pi/.kodi/system/launch.sh"_ and hitting Enter.
-Add the following 3 lines in the nano editor and save the file.<br>
+Add the following 2 lines in the nano editor and save the file.<br>
 
 <strong>#!/bin/bash<br>
-cd /etc/openvpn<br>
 /usr/bin/kodi-standalone</strong><br>
 
 The last line above runs Kodi by calling the command "kodi-standalone", which you can also call from a terminal.
