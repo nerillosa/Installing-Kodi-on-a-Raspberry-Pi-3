@@ -165,7 +165,7 @@ Run the following command: _sudo systemctl enable openvpn_ <br>
 Edit the openvpn startup file: 
 
 * _sudo nano /etc/init.d/openvpn_
-* Look for the line:<br>AUTOSTART=ALL<br>
+* Look for the line:<br>AUTOSTART="all"<br>
 * Replace it with:<br> AUTOSTART="US_West.conf US_Silicon_Valley.conf" <br>
 * Save the file: Ctrl-X -> Y --> Enter <br>
 
