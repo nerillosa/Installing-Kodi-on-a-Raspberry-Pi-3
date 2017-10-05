@@ -114,7 +114,7 @@ __/home/pi/.kodi/system/launch.sh__<br>
 The startup script always runs on boot-up and the line above will execute last and call the launch.sh script we created in the previous step which will in turn launch Kodi.
 Reboot your RPI3 _(sudo reboot now)_. Kodi should launch automatically at the end of boot-up.
 
-**VPN Setup on the RPI3**
+## VPN Setup on the RPI3
 
 One of the best ways to secure your data is to use a virtual private network (VPN), which provides greater control of how you're identified online. Simply put, a VPN creates a virtual encrypted "tunnel" between you and a remote server operated by a VPN service. All external internet traffic is routed through this tunnel, so your ISP can't see your data. If the site you're heading to uses HTTPS, your data stays encrypted, too. Best of all, your computer appears to have the IP address of the VPN server, masking your identity.
 
