@@ -178,7 +178,7 @@ https://www.privateinternetaccess.com/
 It will tell you that you are protected and that your webpage is being requested from an IP other than the IP that your ISP provider assigns to you:
 
 <br><br>
-<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/vpn_protected.jpg" width="500">
+<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/vpn_protected1.jpg" width="500">
 
 
 
