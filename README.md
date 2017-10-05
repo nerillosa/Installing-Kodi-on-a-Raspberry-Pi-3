@@ -133,7 +133,7 @@ You need to create a password file and to write your username and password on th
   * PASSWORD
 * Save the file
 
-The next step is to choose the two ovpn files you are going to use and copy/rename them by replacing any spaces with underscores and changing the extesion from ovpn to conf. OpenVPN only recognizes conf files
+The next step is to choose the two ovpn files you are going to use and copy/rename them by replacing any spaces with underscores and changing the extension from ovpn to conf. OpenVPN only recognizes conf files
 
 * sudo cp "US Midwest.ovpn" US_Midwest.conf
 * sudo cp "UK London.ovpn" UK_London.conf
