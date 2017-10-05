@@ -133,8 +133,10 @@ The last command runs VPN on the "US WEST" server after asking for username and 
 That is all fine and good but the best way to use VPN is to use two servers (one as a backup) and for VPN to run automatically on startup.
 
 **RUN VPN ON STARTUP**
+
 You need to create a password file and to write your username and password on the file. Do the following:
 
+* cd /etc/openvpn
 * sudo touch pswfile  (create blank file)
 * sudo chmod 700 pswfile (give access only to root, so nobody else can see the password)
 * sudo nano pswfile
@@ -142,6 +144,55 @@ You need to create a password file and to write your username and password on th
   * USERNAME
   * PASSWORD
 * Save the file
+
+The next step is to choose the two ovpn files you are going to use and copy/rename them by replacing any spaces with underscores and changing the extesion from ovpn to conf. OpenVPN only recognizes conf files
+
+* sudo cp "US Midwest.ovpn" US_Midwest.conf
+* sudo cp "UK London.ovpn" UK_London.conf
+
+The next step is to edit those new conf files and adding the reference to the pswfile in it.
+Open each file and look for the line that starts with "auth-user-pass".
+Replace that line with "auth-user-pass pswfile". Omit the double quotes.
+
+* sudo nano US_Midwest.conf
+* modfify auth-user-pass line
+* save the file: Ctrl-X -> Y --> Enter
+
+Once you have modified both conf files, you are ready to have openvpn run at boot-up.
+In order to run openvpn at startup, you need to add it as a startup service.<br>
+Run the following command: _sudo systemctl enable openvpn_ <br>
+
+Edit the openvpn startup file. Do the following:
+
+sudo nano /etc/init.d/openvpn
+Look for the line: AUTOSTART=ALL
+Replace it with: AUTOSTART="US_West.conf US_Silicon_Valley.conf" <br>
+
+The two conf files that you created will be run by openvpn on startup.
+save the file: Ctrl-X -> Y --> Enter <br>
+
+You are done. Reboot the RPI3 _(sudo reboot now)_ and VPN should start running on startup under the covers.
+The easiest way to check of your VPN is working is to open browser up in the Desktop and going to: <br>
+https://www.privateinternetaccess.com/
+
+It will tell you that you are protected and that your webpage is being requested from an IP other than the IP that your ISP provider assigns to you:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
