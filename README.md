@@ -118,7 +118,7 @@ To install and run VPN in the RPI3, open a terminal and do the following:
 * sudo openvpn "US West.ovpn" 
 
 The last command runs VPN on the "US WEST" server after asking for username and password provided by your VPN service. This means that all your web traffic gets encrypted (and tunnelled through the internet) and goes to and from that server before going out into internet again to fetch the data/webpages requested.
-That is all fine and good but the best way to use VPN is to use two servers (one as a backup) and for VPN to run automatically on startup.
+That is all fine and good but the best way to use VPN is to forget about it and have it run automatically on startup.
 
 **RUN VPN ON STARTUP**
 
