@@ -150,7 +150,7 @@ Replace that line with "auth-user-pass pswfile".
 
 The conf file should look similar to the following snapshot:
 <br><br>
-<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/conf_file.jpg" width="500">
+<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/conf_file.JPG" width="500">
 
 Once you have modified the conf file, you are ready to have openvpn run at boot-up.
 In order to run openvpn at startup, you need to add it as a startup service.<br>
