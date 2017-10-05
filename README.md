@@ -128,25 +128,31 @@ You need to create a password file and to write your username and password on th
 * sudo touch pswfile  (create blank file)
 * sudo chmod 700 pswfile (give access only to root, so nobody else can see the password)
 * sudo nano pswfile
-* Add these two lines with the actual username and passwords: 
-  * USERNAME
-  * PASSWORD
+* Add these two lines with the actual username and passwords:<br> 
+  __USERNAME__ <br>
+  __PASSWORD__
 * Save the file
 
-The next step is to choose the two ovpn files you are going to use and copy/rename them by replacing any spaces with underscores and changing the extension from ovpn to conf. OpenVPN only recognizes conf files
+The next step is to choose which ovpn file you are going to use and copy/rename it by replacing any spaces with underscores and changing the extension from ovpn to conf. OpenVPN only recognizes conf files
 
 * sudo cp "US Midwest.ovpn" US_Midwest.conf
-* sudo cp "UK London.ovpn" UK_London.conf
 
-The next step is to edit those new conf files and adding the reference to the pswfile in it.
-Open each file and look for the line that starts with "auth-user-pass".
+The next step is to edit the new conf file and add the reference to the pswfile in it.
+Open the file and look for the line that starts with "auth-user-pass".
 Replace that line with "auth-user-pass pswfile".
 
 * sudo nano US_Midwest.conf
 * replace "auth-user-pass" with "auth-user-pass pswfile". Omit the double quotes.
+* Add two new lines just below the previous line: 
+  auth-nocache<br>
+  pull-filter ignore "auth-token"
 * save the file: Ctrl-X -> Y --> Enter
 
-Once you have modified both conf files, you are ready to have openvpn run at boot-up.
+The conf file should look similar to the following snapshot:
+<br><br>
+<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/conf_file.jpg" width="500">
+
+Once you have modified the conf file, you are ready to have openvpn run at boot-up.
 In order to run openvpn at startup, you need to add it as a startup service.<br>
 Run the following command: _sudo systemctl enable openvpn_ <br>
 
@@ -154,10 +160,10 @@ Edit the openvpn startup file:
 
 * _sudo nano /etc/init.d/openvpn_
 * Look for the line:<br>AUTOSTART="all"<br>
-* Replace it with:<br> AUTOSTART="US_West.conf US_Silicon_Valley.conf" <br>
+* Replace it with:<br> AUTOSTART="US_Midwest.conf" <br>
 * Save the file: Ctrl-X -> Y --> Enter <br>
 
-The two conf files that you created will be run by openvpn on startup.
+The conf file will be run by openvpn on startup.
 
 You are done. Reboot the RPI3 _(sudo reboot now)_ and VPN should start running on startup under the covers.
 The easiest way to check if VPN is working is to open a browser up in the Desktop and going to: <br>
