@@ -152,20 +152,19 @@ The next step is to choose the two ovpn files you are going to use and copy/rena
 
 The next step is to edit those new conf files and adding the reference to the pswfile in it.
 Open each file and look for the line that starts with "auth-user-pass".
-Replace that line with "auth-user-pass pswfile". Omit the double quotes.
+Replace that line with "auth-user-pass pswfile".
 
 * sudo nano US_Midwest.conf
-* modfify auth-user-pass line
+* replace "auth-user-pass" with "auth-user-pass pswfile". Omit the double quotes.
 * save the file: Ctrl-X -> Y --> Enter
 
 Once you have modified both conf files, you are ready to have openvpn run at boot-up.
 In order to run openvpn at startup, you need to add it as a startup service.<br>
 Run the following command: _sudo systemctl enable openvpn_ <br>
 
-Edit the openvpn startup file. Do the following:
+Edit the openvpn startup file: _sudo nano /etc/init.d/openvpn_
 
-sudo nano /etc/init.d/openvpn
-Look for the line: AUTOSTART=ALL<br>
+Look for the line:<br>AUTOSTART=ALL<br>
 Replace it with:<br> AUTOSTART="US_West.conf US_Silicon_Valley.conf" <br>
 
 The two conf files that you created will be run by openvpn on startup.
