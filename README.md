@@ -172,11 +172,10 @@ Edit the openvpn startup file:
 The two conf files that you created will be run by openvpn on startup.
 
 You are done. Reboot the RPI3 _(sudo reboot now)_ and VPN should start running on startup under the covers.
-The easiest way to check of your VPN is working is to open browser up in the Desktop and going to: <br>
+The easiest way to check if VPN is working is to open a browser up in the Desktop and going to: <br>
 https://www.privateinternetaccess.com/
 
 It will tell you that you are protected and that your webpage is being requested from an IP other than the IP that your ISP provider assigns to you:
-
 <br><br>
 <img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/vpn_protected1.jpg" width="500">
 
