@@ -92,7 +92,7 @@ Now simply reboot with the command _"sudo reboot now"_ and you have successfully
 **RUN KODI ON STARTUP**
 
 At this point you should see KODI as an installed program under "Sound & Video" in the desktop.
-If you want KODI to run on startup instead of the RPI3 booting up on the Desktop you can accomplish this by various ways. The way I did it was to edit the RPI3 startup script. 
+If you want KODI to run on startup instead of the RPI3 booting up on the Desktop you can accomplish this by various ways. The way I did it was to edit the RPI3 startup script.<br> 
 You might want to save a copy of this file to your home folder _(sudo cp /home/pi/.config/lxsession/LXDE-pi/autostart ~)_ before modifying it. In case you make a mistake you can always restore the startup file from this copy.
 Open the RPI3 startup script by typing: _"sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart"_ and hitting Enter.
 Add the following line at the end of the script and save the file. <br>
