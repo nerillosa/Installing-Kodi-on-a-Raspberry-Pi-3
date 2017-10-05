@@ -135,20 +135,20 @@ You need to create a password file and to write your username and password on th
 
 The next step is to choose which ovpn file you are going to use and copy/rename it by replacing any spaces with underscores and changing the extension from ovpn to conf. OpenVPN only recognizes conf files
 
-* sudo cp "US Midwest.ovpn" US_Midwest.conf
+* sudo cp "US West.ovpn" US_West.conf
 
 The next step is to edit the new conf file and add the reference to the pswfile in it.
 Open the file and look for the line that starts with "auth-user-pass".
 Replace that line with "auth-user-pass pswfile".
 
-* sudo nano US_Midwest.conf
+* sudo nano US_West.conf
 * replace "auth-user-pass" with "auth-user-pass pswfile". Omit the double quotes.
-* Add two new lines just below the previous line: 
+* Add two new lines just below the previous line. These are for enhanced security: 
   auth-nocache<br>
   pull-filter ignore "auth-token"
 * save the file: Ctrl-X -> Y --> Enter
 
-The conf file should look similar to the following snapshot:
+The conf file should look similar to the following snapshot. Ther modified/new lines are highlighted.
 <br><br>
 <img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/conf_file.JPG" width="500">
 
@@ -160,7 +160,7 @@ Edit the openvpn startup file:
 
 * _sudo nano /etc/init.d/openvpn_
 * Look for the line:<br>AUTOSTART="all"<br>
-* Replace it with:<br> AUTOSTART="US_Midwest.conf" <br>
+* Replace it with:<br> AUTOSTART="US_West.conf" <br>
 * Save the file: Ctrl-X -> Y --> Enter <br>
 
 The conf file will be run by openvpn on startup.
