@@ -116,5 +116,21 @@ Reboot your RPI3 _(sudo reboot now)_. Kodi should launch automatically at the en
 
 ## VPN Setup on the RPI3
 
-One of the best ways to secure your data is to use a virtual private network (VPN), which provides greater control of how you're identified online. Simply put, a VPN creates a virtual encrypted "tunnel" between you and a remote server operated by a VPN service. All external internet traffic is routed through this tunnel, so your ISP can't see your data. If the site you're heading to uses HTTPS, your data stays encrypted, too. Best of all, your computer appears to have the IP address of the VPN server, masking your identity.
+One of the best ways to secure your data is to use a virtual private network (VPN), which provides greater control of how you're identified online. Simply put, a VPN creates a virtual encrypted "tunnel" between you and a remote server operated by a VPN service. All external internet traffic is routed through this tunnel, so your ISP can't see your data. If the site you're heading to uses HTTPS, your data stays encrypted, too. Best of all, your computer appears to have the IP address of the VPN server, masking your identity. Because you can use a VPN to spoof your location, it's an effective tool for getting around internet censorship. It's also a way to watch region-locked content. If you log in to a VPN server in the UK, you'll be able to watch BBC streams for free.
+
+There are many VPN providers out there. Some better than others. Following advice from a current user, I chose https://www.privateinternetaccess.com/ which charges $3.33 per month if you buy a whole year subscription. The installation instructions are similar for most VPNs as they all implement the OpenVPN suite of virtual private network (VPN) techniques. Once you sign up to your preferred VPN service, they will issue you a userId and a password. They will also give you access to special files (with ovpn extension) which can access specific servers located in different geographical areas.
+
+To install VPN in the RPI, open a terminal and do the following:
+
+
+* sudo apt-get update
+* sudo apt-get install openvpn
+* cd /etc/openvpn/
+* wget https://www.privateinternetaccess.com/openvpn/openvpn.zip
+* sudo unzip openvpn.zip (this will create a lot of ovpn files)
+* sudo openvpn "US West.ovpn" 
+
+(This runs at the USVPN after asking for username and password)
+
+
 
