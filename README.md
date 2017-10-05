@@ -120,8 +120,7 @@ One of the best ways to secure your data is to use a virtual private network (VP
 
 There are many VPN providers out there. Some better than others. Following advice from a current user, I chose https://www.privateinternetaccess.com/ which charges $3.33 per month if you buy a whole year subscription. The installation instructions are similar for most VPNs as they all implement the OpenVPN suite of virtual private network (VPN) techniques. Once you sign up to your preferred VPN service, they will issue you a userId and a password. They will also give you access to special files (with ovpn extension) which can access specific servers located in different geographical areas.
 
-To install VPN in the RPI, open a terminal and do the following:
-
+To install and run VPN in the RPI3, open a terminal and do the following:
 
 * sudo apt-get update
 * sudo apt-get install openvpn
@@ -130,7 +129,12 @@ To install VPN in the RPI, open a terminal and do the following:
 * sudo unzip openvpn.zip (this will create a lot of ovpn files)
 * sudo openvpn "US West.ovpn" 
 
-(This runs at the USVPN after asking for username and password)
+The last command runs VPN on the "US WEST" server after asking for username and password provided by your VPN service. This means that all your web traffic gets encrypted (and tunnelled through the internet) and goes to and from that server before going out into internet again to fetch the data/webpages requested.
+That is all fine and good but the best way to use VPN is to use two servers (one as a backup) and for VPN to run automatically on startup.
+
+
+
+
 
 
 
