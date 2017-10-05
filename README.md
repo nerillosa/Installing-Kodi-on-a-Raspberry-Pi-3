@@ -139,9 +139,9 @@ You need to create a password file and to write your username and password on th
 * sudo chmod 700 pswfile (give access only to root, so nobody else can see the password)
 * sudo nano pswfile
 * Add these two lines with the actual username and passwords: 
-** USERNAME
-** PASSWORD
-
+..* USERNAME
+..* PASSWORD
+* Save the file
 
 
 
