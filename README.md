@@ -162,13 +162,14 @@ Once you have modified both conf files, you are ready to have openvpn run at boo
 In order to run openvpn at startup, you need to add it as a startup service.<br>
 Run the following command: _sudo systemctl enable openvpn_ <br>
 
-Edit the openvpn startup file: _sudo nano /etc/init.d/openvpn_
+Edit the openvpn startup file: 
 
-Look for the line:<br>AUTOSTART=ALL<br>
-Replace it with:<br> AUTOSTART="US_West.conf US_Silicon_Valley.conf" <br>
+* _sudo nano /etc/init.d/openvpn_
+* Look for the line:<br>AUTOSTART=ALL<br>
+* Replace it with:<br> AUTOSTART="US_West.conf US_Silicon_Valley.conf" <br>
+* Save the file: Ctrl-X -> Y --> Enter <br>
 
 The two conf files that you created will be run by openvpn on startup.
-save the file: Ctrl-X -> Y --> Enter <br>
 
 You are done. Reboot the RPI3 _(sudo reboot now)_ and VPN should start running on startup under the covers.
 The easiest way to check of your VPN is working is to open browser up in the Desktop and going to: <br>
@@ -176,7 +177,8 @@ https://www.privateinternetaccess.com/
 
 It will tell you that you are protected and that your webpage is being requested from an IP other than the IP that your ISP provider assigns to you:
 
-
+<br><br>
+<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/vpn_protected.jpg" width="500">
 
 
 
