@@ -92,26 +92,14 @@ Now simply reboot with the command _"sudo reboot now"_ and you have successfully
 **RUN KODI ON STARTUP**
 
 At this point you should see KODI as an installed program under "Sound & Video" in the desktop.
-If you want KODI to run on startup instead of the RPI3 booting up on the Desktop you can accomplish this by various ways. The way I did it was to create a launch script to run from the RPI3 startup script. Do the following:
-Open a terminal (Ctrl-Alt-T) and create a launch script by typing: _"sudo nano /home/pi/.kodi/system/launch.sh"_ and hitting Enter.
-Add the following 2 lines in the nano editor and save the file (Ctrl-x --> Y --> Enter).<br>
-
-<strong>#!/bin/bash<br>
-/usr/bin/kodi-standalone</strong><br>
-
-The last line above runs Kodi by calling the command "kodi-standalone", which you can also call from a terminal.
-Make the new launch script executable by running the following command:<br>
-
-__sudo chmod 700 /home/pi/.kodi/system/launch.sh__ <br> 
-
-You need to modify the RPI3 startup script next.<br>
+If you want KODI to run on startup instead of the RPI3 booting up on the Desktop you can accomplish this by various ways. The way I did it was to edit the RPI3 startup script. 
 You might want to save a copy of this file to your home folder _(sudo cp /home/pi/.config/lxsession/LXDE-pi/autostart ~)_ before modifying it. In case you make a mistake you can always restore the startup file from this copy.
 Open the RPI3 startup script by typing: _"sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart"_ and hitting Enter.
 Add the following line at the end of the script and save the file. <br>
 
-__/home/pi/.kodi/system/launch.sh__<br>
+__/usr/bin/kodi-standalone__<br>
 
-The startup script always runs on boot-up and the line above will execute last and call the launch.sh script we created in the previous step which will in turn launch Kodi.
+The startup script always runs on boot-up and the line above will execute last and launch Kodi.
 Reboot your RPI3 _(sudo reboot now)_. Kodi should launch automatically at the end of boot-up.
 
 ## VPN Setup on the RPI3
