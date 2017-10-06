@@ -122,7 +122,7 @@ That is all fine and good but the best way to use VPN is to forget about it and 
 
 **RUN VPN ON STARTUP**
 
-You need to create a password file and to write your username and password on the file. Do the following:
+You need to setup OpenVpn as a service. Create a password file and to write your username and password on the file. Do the following:
 
 * cd /etc/openvpn
 * sudo touch pswfile  (create blank file)
@@ -135,7 +135,7 @@ Should look something like this:
 <br><br>
 <img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/paswd_file.jpg" width="500">
 
-The next step is to choose which ovpn file you are going to use and copy/rename it by replacing any spaces with underscores and changing the extension from ovpn to conf. OpenVPN only recognizes conf files
+The next step is to choose which ovpn file you are going to use and copy/rename it by replacing any spaces with underscores and changing the extension from ovpn to conf. The OpenVPN service only recognizes conf files
 
 * sudo cp "US West.ovpn" US_West.conf
 
@@ -154,13 +154,13 @@ The conf file should look similar to the following snapshot. Ther modified/new l
 <br><br>
 <img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/conf_file.JPG" width="500">
 
-Once you have modified the conf file, you are ready to have openvpn run at boot-up.
+Once you have modified the conf file, you are ready to have the OpenVpn service run at boot-up.
 In order to run openvpn at startup, you need to add it as a startup service.<br>
 Run the following command: _sudo systemctl enable openvpn_ <br>
 
 The conf file will be read on startup and VPN will start silently in the background on bootup.
 
-You are done. Reboot the RPI3 _(sudo reboot now)_ and VPN should start running on startup under the covers.
+You are done. Reboot the RPI3 _(sudo reboot now)_ and the OpenVpn service should start running on startup under the covers.
 The easiest way to check if VPN is working is to open a browser up in the Desktop and going to: <br>
 https://www.privateinternetaccess.com/
 
