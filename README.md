@@ -129,9 +129,11 @@ You need to create a password file and to write your username and password on th
 * sudo chmod 700 pswfile (give access only to root, so nobody else can see the password)
 * sudo nano pswfile
 * Add two lines with no spaces or whitespace between them with the actual username and passwords:<br> 
-  __USERNAME__ <br>
-  __PASSWORD__
 * Save the file
+
+Should look something like this:
+<br><br>
+<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/paswd_file.jpg" width="500">
 
 The next step is to choose which ovpn file you are going to use and copy/rename it by replacing any spaces with underscores and changing the extension from ovpn to conf. OpenVPN only recognizes conf files
 
