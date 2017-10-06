@@ -128,7 +128,7 @@ You need to create a password file and to write your username and password on th
 * sudo touch pswfile  (create blank file)
 * sudo chmod 700 pswfile (give access only to root, so nobody else can see the password)
 * sudo nano pswfile
-* Add two lines with no spaces or whitespace between them with the actual username and passwords:<br> 
+* Add two lines with no spaces or whitespace between them with the actual username and password:<br> 
 * Save the file
 
 Should look something like this:
