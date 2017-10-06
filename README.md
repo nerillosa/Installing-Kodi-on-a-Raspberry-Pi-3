@@ -145,7 +145,7 @@ Replace that line with "auth-user-pass pswfile".
 
 * sudo nano US_West.conf
 * replace "auth-user-pass" with "auth-user-pass pswfile". Omit the double quotes.
-* Add two new lines just below the previous line. These are for enhanced security: 
+* Add two new lines just below the previous line. These are for enhanced security:<br> 
   auth-nocache<br>
   pull-filter ignore "auth-token"
 * save the file: Ctrl-X -> Y --> Enter
