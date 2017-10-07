@@ -16,7 +16,7 @@ The top two connectors are the HDMI cable to TV and the USB power supply cord. T
 <img src="/images/raspberrypi_connected.jpg" width="500">
 
 ## Loading of the Raspbian desktop Operating System (OS) on the SD card ##
-There are several Operating Systems of choice, which you can select by running the NOOBS operating system installation manager. I chose to load the Raspberry Pi desktop OS directly. The desktop OS allows you easy configuration of WiFi, Bluetooth, general settings, as well as access to different programs (browser) and utilities. <br> [Go to](https://www.raspberrypi.org/downloads/) and click on the RASPBERRY PI DESKTOP link and then on the "Download ISO" link. This will download the OS image onto your computer. <br><br>
+There are several Operating Systems of choice, which you can select by running the NOOBS operating system installation manager. I chose to load the Raspberry Pi desktop OS directly. The desktop OS allows you easy configuration of WiFi, Bluetooth, general settings, as well as access to different programs (browser) and utilities. <br> Go to https://www.raspberrypi.org/downloads/ and click on the RASPBERRY PI DESKTOP link and then on the "Download ISO" link. This will download the OS image onto your computer. <br><br>
 
 <img src="/images/iso_download.JPG" width="500">
 
@@ -27,9 +27,9 @@ You will need to write this image file to the blank SD card.
 __WRITING AN ISO IMAGE TO THE SD CARD__ <br>
 
 You will need to use an ISO image writing tool to install the image you have downloaded on your SD card. Once you write this binary image to the SD card and insert it in the Raspberry Pi, the Pi will boot up to the desktop operating system.
-There are many Image writing programs out there. I chose Etcher which is free and can be [downloaded at](https://etcher.io/) <br>
+There are many Image writing programs out there. I chose Etcher which is free and can be downloaded at https://etcher.io/ <br>
 Etcher is a graphical SD card writing tool that works on Mac OS, Linux and Windows, and is the easiest option for most users. If your computer does not have an SD card port, you will need to acquire a SD card USB adapter like 
-[this one](https://www.amazon.com/gp/product/B006T9B6R2/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1) <br>
+[this one](https://www.amazon.com/gp/product/B006T9B6R2/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1) from amazon.<br>
 
 To write your image with Etcher:
 
