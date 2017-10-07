@@ -5,7 +5,8 @@ Things you will need:
 * A raspberry pi 3 kit. A kit, at a minimum should contain the RPI3 itself, a case, a 2.5A power supply, and the heatsinks for the two processors.
 I bought [this one](https://www.amazon.com/gp/product/B01D92SSX6/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1) from amazon.
 
-* Some kits come with preloaded SD memory cards. I bought a empty 32 G card and loaded the OS from the internet -- as I will explain later. The SD card should be a good quality card. I bought this one: https://www.amazon.com/gp/product/B010Q57T02/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1
+* Some kits come with preloaded SD memory cards. I bought a empty 32 G card and loaded the OS from the internet -- as I will explain later. The SD card should be a good quality card.
+I bought [this one](https://www.amazon.com/gp/product/B010Q57T02/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1) from amazon.
 * For initial setup you will need a USB keyboard and mouse. After setup, you can control Kodi from your smartphone using free apps like Kodi Remote on Android which will run on your internal WiFi network.
 * Finally, you will need to have an HDMI TV (plus HDMI cable) and a Wifi home network up and running to which the RPI3 can connect in order to download videos and music and stream live to your TV.
 
@@ -15,7 +16,7 @@ The top two connectors are the HDMI cable to TV and the USB power supply cord. T
 <img src="/images/raspberrypi_connected.jpg" width="500">
 
 ## Loading of the Raspbian desktop Operating System (OS) on the SD card ##
-There are several Operating Systems of choice, which you can select by running the NOOBS operating system installation manager. I chose to load the Raspberry Pi desktop OS directly. The desktop OS allows you easy configuration of WiFi, Bluetooth, general settings, as well as access to different programs (browser) and utilities. <br> Go to https://www.raspberrypi.org/downloads/ and click on the RASPBERRY PI DESKTOP link and then on the "Download ISO" link. This will download the OS image onto your computer. <br><br>
+There are several Operating Systems of choice, which you can select by running the NOOBS operating system installation manager. I chose to load the Raspberry Pi desktop OS directly. The desktop OS allows you easy configuration of WiFi, Bluetooth, general settings, as well as access to different programs (browser) and utilities. <br> [Go to](https://www.raspberrypi.org/downloads/) and click on the RASPBERRY PI DESKTOP link and then on the "Download ISO" link. This will download the OS image onto your computer. <br><br>
 
 <img src="/images/iso_download.JPG" width="500">
 
@@ -26,8 +27,9 @@ You will need to write this image file to the blank SD card.
 __WRITING AN ISO IMAGE TO THE SD CARD__ <br>
 
 You will need to use an ISO image writing tool to install the image you have downloaded on your SD card. Once you write this binary image to the SD card and insert it in the Raspberry Pi, the Pi will boot up to the desktop operating system.
-There are many Image writing programs out there. I chose Etcher which is free and can be downloaded at https://etcher.io/ <br>
-Etcher is a graphical SD card writing tool that works on Mac OS, Linux and Windows, and is the easiest option for most users. If your computer does not have an SD card port, you will need to acquire a SD card USB adapter like this one: https://www.amazon.com/gp/product/B006T9B6R2/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1 <br>
+There are many Image writing programs out there. I chose Etcher which is free and can be [downloaded at](https://etcher.io/) <br>
+Etcher is a graphical SD card writing tool that works on Mac OS, Linux and Windows, and is the easiest option for most users. If your computer does not have an SD card port, you will need to acquire a SD card USB adapter like 
+[this one](https://www.amazon.com/gp/product/B006T9B6R2/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1) <br>
 
 To write your image with Etcher:
 
@@ -114,7 +116,8 @@ Reboot your RPI3 _(sudo reboot now)_. Kodi should launch automatically at the en
 
 One of the best ways to secure your data is to use a virtual private network (VPN), which provides greater control of how you're identified online. Simply put, a VPN creates a virtual encrypted "tunnel" between you and a remote server operated by a VPN service. All external internet traffic is routed through this tunnel, so your ISP can't see your data. If the site you're heading to uses HTTPS, your data stays encrypted, too. Best of all, your computer appears to have the IP address of the VPN server, masking your identity. Because you can use a VPN to spoof your location, it's an effective tool for getting around internet censorship. It's also a way to watch region-locked content. If you log in to a VPN server in the UK, you'll be able to watch BBC streams for free.
 
-There are many VPN providers out there. Some better than others. Following advice from a current user, I chose https://www.privateinternetaccess.com/ which charges $3.33 per month if you buy a whole year subscription. The installation instructions are similar for most VPNs as they all implement the OpenVPN suite of virtual private network (VPN) techniques. Once you sign up to your preferred VPN service, they will issue you a userId and a password. They will also give you access to special files (with ovpn extension) which can access specific servers located in different geographical areas.
+There are many VPN providers out there. Some better than others. Following advice from a current user, I chose 
+[Private Internet Access](https://www.privateinternetaccess.com/) which charges $3.33 per month if you buy a whole year subscription. The installation instructions are similar for most VPNs as they all implement the OpenVPN suite of virtual private network (VPN) techniques. Once you sign up to your preferred VPN service, they will issue you a userId and a password. They will also give you access to special files (with ovpn extension) which can access specific servers located in different geographical areas.
 
 To install and run VPN in the RPI3, open a terminal and do the following:
 
@@ -188,22 +191,6 @@ https://www.privateinternetaccess.com/
 It will tell you that you are protected and that your webpage is being requested from an IP other than the IP that your ISP provider assigns to you:
 <br><br>
 <img src="/images/vpn_protected1.jpg" width="500">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
