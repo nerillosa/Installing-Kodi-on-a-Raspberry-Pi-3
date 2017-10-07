@@ -10,7 +10,7 @@ I bought this one from amazon: https://www.amazon.com/gp/product/B01D92SSX6/ref=
 ## This is how a connected RPI3 inside a clear case looks like: ##
 The top two connectors are the HDMI cable to TV and the USB power supply cord. The two connectors on the side (one on top of the other) are the USB keyboard and mouse. 
 <br><br>
-<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/raspberrypi_connected.jpg" width="500">
+<img src="/images/raspberrypi_connected.jpg" width="500">
 ## Loading of the Raspbian desktop Operating System (OS) on the SD card ##
 There are several Operating Systems of choice, which you can select by running the NOOBS operating system installation manager. I chose to load the Raspberry Pi desktop OS directly. The desktop OS allows you easy configuration of WiFi, Bluetooth, general settings, as well as access to different programs (browser) and utilities. <br> Go to https://www.raspberrypi.org/downloads/ and click on the RASPBERRY PI DESKTOP link and then on the "Download ISO" link. This will download the OS image onto your computer. <br>
 ![ISO download link](images/iso_download.JPG?raw=true "ISO download") <br>
@@ -47,7 +47,7 @@ The RPI3 should boot up and you should see a blank linux desktop. The first thin
 
 You should see the following screen. For security purposes you should always change the default password which is normally "raspberry". Click on "Change Password" button and change the password to something of your choice. 
 <br><br>
-<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/password.jpg" width="500">
+<img src="/images/password.jpg" width="500">
 
 Click on "Localization" and configure Locale, Timezone, Keyboard, and WiFi country to your respective preferences. 
 In my case I have:
@@ -64,10 +64,10 @@ To connect to your RPI3 remotely from any other computer on your same home WiFi 
 To do this go to the "Raspberry Pi Configuration" popup again and instead of clicking on "Localization", click on "Interfaces". Hit the enable radio button for the SSH entry and then click on "Ok". You can now connect to your RPI3 using the IP address that your router has assigned to your RPI3: pi@192.168.0.8 in my case. An easy way to find out the IP address that your RPI3 has is to open a terminal (click on the black terminal icon on the top of the screen) and type ifconfig.
 You should see your IP address next to the wlan0 entry as inet: 192.168.0.8  (in my case):
 <br><br>
-<img src="images/terminal.jpg" width="500">
+<img src="/images/terminal.jpg" width="500">
 
 
-## Installing Kodi on a RPI3 running the Raspbian desktop OS
+## Installing Kodi on a RPI3 running the Raspbian desktop OS ##
 
 Installing the Kodi Media Center on the Raspberry Pi is easy and only requires a couple of commands to install on your system. There will be a few configurations you will have to do after to make it work properly as well as updating Kodi if you would like. Run the following commands one after the other in a terminal window on your Raspberry Pi. 
 <p align="center"> <strong>sudo apt-get update<br>sudo apt-get install kodi</strong> </p>
@@ -103,7 +103,7 @@ __/usr/bin/kodi-standalone__<br>
 The startup script always runs on boot-up and the line above will execute last and launch Kodi.<br>
 Reboot your RPI3 _(sudo reboot now)_. Kodi should launch automatically at the end of boot-up.
 
-## VPN Setup on the RPI3
+## VPN Setup on the RPI3 ##
 
 One of the best ways to secure your data is to use a virtual private network (VPN), which provides greater control of how you're identified online. Simply put, a VPN creates a virtual encrypted "tunnel" between you and a remote server operated by a VPN service. All external internet traffic is routed through this tunnel, so your ISP can't see your data. If the site you're heading to uses HTTPS, your data stays encrypted, too. Best of all, your computer appears to have the IP address of the VPN server, masking your identity. Because you can use a VPN to spoof your location, it's an effective tool for getting around internet censorship. It's also a way to watch region-locked content. If you log in to a VPN server in the UK, you'll be able to watch BBC streams for free.
 
@@ -134,7 +134,7 @@ You need to setup OpenVpn as a service. Create a password file and write your us
 
 Should look something like this:
 <br><br>
-<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/paswd_file.jpg" width="500">
+<img src="/images/paswd_file.jpg" width="500">
 
 The next step is to choose which ovpn file you are going to use and copy/rename it by replacing any spaces with underscores and changing the extension from ovpn to conf. The OpenVPN service only recognizes conf files
 
@@ -152,7 +152,7 @@ Replace that line with "auth-user-pass pswfile".
 
 The conf file should look similar to the following snapshot. Ther modified/new lines are highlighted.
 <br><br>
-<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/conf_file.JPG" width="500">
+<img src="/images/conf_file.JPG" width="500">
 
 Once you have modified the conf file, you are ready to have the OpenVpn service run at boot-up.
 To accomplish this you need to add it as a startup service.<br>
