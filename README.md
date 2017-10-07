@@ -6,10 +6,10 @@ The RPI3 is one of the newest versions of the Raspberry Pi. It has support for i
 Kodi provides access to streaming media content, including videos and music. It allows users to play and view most videos, music, podcasts, and other digital media files from local and network storage media and the internet. Kodi also accesses content over the internet using various “add-ons” created by members of the Kodi open source community. Therefore, add-ons do not come “out of the box” with any official version of Kodi.<br>
 Things you will need:
 
-* A raspberry pi 3 kit. A kit, at a minimum should contain the RPI3 itself, a case, a 2.5A power supply, and the heatsinks for the two processors.
+* A raspberry pi 3 kit. A kit, at a minimum should contain the RPI3 itself, a case, a 2.5A power supply, and the heatsinks for the two processors.<br>
 I bought [this one](https://www.amazon.com/gp/product/B01D92SSX6/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1) from amazon.
 
-* Some kits come with preloaded SD memory cards. I bought a empty 32 G card and loaded the OS from the internet -- as I will explain later. The SD card should be a good quality card.
+* Some kits come with preloaded SD memory cards. I bought a empty 32 G card and loaded the OS from the internet -- as I will explain later. The SD card should be a good quality card.<br>
 I bought [this one](https://www.amazon.com/gp/product/B010Q57T02/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1) from amazon.
 
 * For initial setup you will need a USB keyboard and mouse. After setup, you can control Kodi from your smartphone using free apps like Kodi Remote on Android which will run on your internal WiFi network.
