@@ -163,7 +163,18 @@ The conf file will be read on startup and VPN will start silently in the backgro
 __You are done!__ 
 
 Reboot the RPI3 _(sudo reboot now)_ and the OpenVpn service should start running on startup under the covers.
-The easiest way to check if VPN is working is to open a browser up in the Desktop and going to your VPN provider's website: <br>
+One easy way to check if VPN is working is first to copy the openvpn file to your home directory. This is a one time action:
+
+_sudo cp /etc/init.d/openvpn ~_
+
+Once this is done you can check the VPN status by issuing this command any time from your home directory:
+
+_./openvpn status_
+
+If all is well, the command will answer:<br> 
+**[ ok ] VPN 'US_West' is running.**
+
+Another way to check your VPN status is to open a browser in the Desktop and going to your VPN provider's website: <br>
 https://www.privateinternetaccess.com/
 
 It will tell you that you are protected and that your webpage is being requested from an IP other than the IP that your ISP provider assigns to you:
