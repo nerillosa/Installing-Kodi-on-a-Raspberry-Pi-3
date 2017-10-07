@@ -41,9 +41,9 @@ Do the following in order, plugging in the power last.
 * Plug in the power supply between the your RPI3 and a power outlet.
 
 The RPI3 should boot up and you should see a blank linux desktop. The first thing you need to do before installing Kodi is to configure basic settings like your timezone, the keyboard type, WiFi, password, and the language to use. Hover your mouse over the raspberry icon on the top left of the screen and select "Preferences" from the ensuing dropdown and then "Raspberry Pi Configuration":
-<br><br>
-<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/linux_desktop.jpg" width="750"> <br>
-![linux desktop link](images/linux_desktop.jpg?v=4&s=250) <br>
+<br>
+
+![Linux Desktop link](images/linux_desktop.jpg?raw=true "Linux Desktop") <br>
 
 You should see the following screen. For security purposes you should always change the default password which is normally "raspberry". Click on "Change Password" button and change the password to something of your choice. 
 <br><br>
@@ -64,7 +64,7 @@ To connect to your RPI3 remotely from any other computer on your same home WiFi 
 To do this go to the "Raspberry Pi Configuration" popup again and instead of clicking on "Localization", click on "Interfaces". Hit the enable radio button for the SSH entry and then click on "Ok". You can now connect to your RPI3 using the IP address that your router has assigned to your RPI3: pi@192.168.0.8 in my case. An easy way to find out the IP address that your RPI3 has is to open a terminal (click on the black terminal icon on the top of the screen) and type ifconfig.
 You should see your IP address next to the wlan0 entry as inet: 192.168.0.8  (in my case):
 <br><br>
-<img src="https://github.com/nerillosa/Installing-Kodi-on-a-Raspberry-Pi-3/blob/master/images/terminal.jpg" width="500">
+<img src="images/terminal.jpg" width="500">
 
 
 ## Installing Kodi on a RPI3 running the Raspbian desktop OS
