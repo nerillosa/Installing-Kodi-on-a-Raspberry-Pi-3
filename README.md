@@ -16,7 +16,7 @@ The top two connectors are the HDMI cable to TV and the USB power supply cord. T
 ## Loading of the Raspbian desktop Operating System (OS) on the SD card ##
 There are several Operating Systems of choice, which you can select by running the NOOBS operating system installation manager. I chose to load the Raspberry Pi desktop OS directly. The desktop OS allows you easy configuration of WiFi, Bluetooth, general settings, as well as access to different programs (browser) and utilities. <br> Go to https://www.raspberrypi.org/downloads/ and click on the RASPBERRY PI DESKTOP link and then on the "Download ISO" link. This will download the OS image onto your computer. <br><br>
 
-![ISO download link](images/iso_download.JPG?raw=true "ISO download")
+<img src="/images/iso_download.JPG" width="500">
 
 As of this writing the ISO file name is: rpd_x86-2017-06-23/2017-06-22-rpd-x86-jessie.iso<br>
 Don't be confused with the x86 in the name. The RPI3 is a 64 bit computer running a 32 bit operating system.
