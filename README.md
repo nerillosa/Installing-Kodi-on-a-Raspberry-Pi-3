@@ -27,6 +27,7 @@ There are many Image writing programs out there. I chose Etcher which is free an
 Etcher is a graphical SD card writing tool that works on Mac OS, Linux and Windows, and is the easiest option for most users. If your computer does not have an SD card port, you will need to acquire a SD card USB adapter like this one: https://www.amazon.com/gp/product/B006T9B6R2/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1 <br>
 
 To write your image with Etcher:
+
 * Download Etcher and install it.
 * Connect an SD card reader with the SD card inside.
 * Open Etcher and select from your hard drive the Raspberry Pi iso image you downloaded previously.
@@ -37,6 +38,7 @@ __BOOTING UP THE RASPBERRY PI FOR THE FIRST TIME__ <br>
 
 Once the ISO image file has been written to the SD card, it is time to boot up the RPI3. 
 Do the following in order, plugging in the power last. 
+
 * Insert the micro SD card into the memory card slot of the RPI3.
 * Plug in a HDMI cable between the RPI3 and your TV and turn on the TV.
 * Plug in a USB mouse and keyboard to your RPI3.
