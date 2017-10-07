@@ -7,10 +7,12 @@ I bought this one from amazon: https://www.amazon.com/gp/product/B01D92SSX6/ref=
 * Some kits come with preloaded SD memory cards. I bought a empty 32 G card and loaded the OS from the internet -- as I will explain later. The SD card should be a good quality card. I bought this one: https://www.amazon.com/gp/product/B010Q57T02/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1
 * For initial setup you will need a USB keyboard and mouse. After setup, you can control Kodi from your smartphone using free apps like Kodi Remote on Android which will run on your internal WiFi network.
 * Finally, you will need to have an HDMI TV (plus HDMI cable) and a Wifi home network up and running to which the RPI3 can connect in order to download videos and music and stream live to your TV.
+
 ## This is how a connected RPI3 inside a clear case looks like: ##
 The top two connectors are the HDMI cable to TV and the USB power supply cord. The two connectors on the side (one on top of the other) are the USB keyboard and mouse. 
 <br><br>
 <img src="/images/raspberrypi_connected.jpg" width="500">
+
 ## Loading of the Raspbian desktop Operating System (OS) on the SD card ##
 There are several Operating Systems of choice, which you can select by running the NOOBS operating system installation manager. I chose to load the Raspberry Pi desktop OS directly. The desktop OS allows you easy configuration of WiFi, Bluetooth, general settings, as well as access to different programs (browser) and utilities. <br> Go to https://www.raspberrypi.org/downloads/ and click on the RASPBERRY PI DESKTOP link and then on the "Download ISO" link. This will download the OS image onto your computer. <br>
 ![ISO download link](images/iso_download.JPG?raw=true "ISO download") <br>
@@ -41,9 +43,9 @@ Do the following in order, plugging in the power last.
 * Plug in the power supply between the your RPI3 and a power outlet.
 
 The RPI3 should boot up and you should see a blank linux desktop. The first thing you need to do before installing Kodi is to configure basic settings like your timezone, the keyboard type, WiFi, password, and the language to use. Hover your mouse over the raspberry icon on the top left of the screen and select "Preferences" from the ensuing dropdown and then "Raspberry Pi Configuration":
-<br>
+<br><br>
 
-![Linux Desktop link](images/linux_desktop.jpg?raw=true "Linux Desktop") <br>
+<img src="/images/linux_desktop.jpg" width="750">
 
 You should see the following screen. For security purposes you should always change the default password which is normally "raspberry". Click on "Change Password" button and change the password to something of your choice. 
 <br><br>
