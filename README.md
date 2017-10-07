@@ -1,4 +1,4 @@
-# Detailed procedure to install Kodi media player on a RPI3. 
+# Detailed procedure to install Kodi media player on a RPI3
 The RPI3 is one of the newest versions of the Raspberry Pi. It has support for internal WiFi and bluetooth which the previous version B+ did not have.
 Kodi provides access to streaming media content, including videos and music. It allows users to play and view most videos, music, podcasts, and other digital media files from local and network storage media and the internet. Kodi also accesses content over the internet using various “add-ons” created by members of the Kodi open source community. Therefore, add-ons do not come “out of the box” with any official version of Kodi.<br>
 Things you will need:
