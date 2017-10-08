@@ -119,6 +119,8 @@ __/usr/bin/kodi-standalone__<br>
 
 The startup script always runs on boot-up and the line above will execute last and launch Kodi.<br>
 Reboot your RPI3 _(sudo reboot now)_. Kodi should launch automatically at the end of boot-up.
+<br><br>
+<img src="/images/kodi.jpg" width="500">
 
 ## VPN Setup on the RPI3 ##
 
