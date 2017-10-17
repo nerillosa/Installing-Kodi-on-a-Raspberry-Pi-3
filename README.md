@@ -9,7 +9,7 @@ Unlike services like Chromecast or Plex, Kodi is managed by the non-profit XBMC 
 
 The __RASPBERRY PI__ is <br>a credit-card-sized, low-cost computer that can plug into your TV and deliver high-definition video. It is a capable little computer which can be used in electronics projects, and for many of the things that your desktop PC does, like spreadsheets, word processing, browsing the internet, and playing games.  
 The RPI3 is one of the newest versions of the Raspberry Pi. It has support for internal WiFi and bluetooth which the previous version B+ did not have.
-<br>
+<br><br>
 Things you will need:
 
 * A raspberry pi 3 kit. A kit, at a minimum should contain the RPI3 itself, a case, a 2.5A power supply, and the heatsinks for the two processors.<br>
