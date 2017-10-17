@@ -4,10 +4,12 @@
 
 <img src="/images/kodi1.jpg" width="750">
 
-__KODI__ is <br>free, open-source software designed specifically with home entertainment in mind – and it's perfect if you're a fan of movies, sports, films and TV shows. Although it was originally created for the Microsoft Xbox and called Xbox Media Center (XBMC), Kodi has continued to evolve, spawning a community of its own.
+__KODI__<br>
+Kodi is free, open-source software designed specifically with home entertainment in mind – and it's perfect if you're a fan of movies, sports, films and TV shows. Although it was originally created for the Microsoft Xbox and called Xbox Media Center (XBMC), Kodi has continued to evolve, spawning a community of its own.
 Unlike services like Chromecast or Plex, Kodi is managed by the non-profit XBMC Foundation, and it's constantly being modified and upgraded by countless of coders around the world. Kodi provides access to streaming media content, including videos and music. It allows users to play and view most videos, music, podcasts, and other digital media files from local and network storage media and the internet. Kodi also accesses content over the internet using various “add-ons” created by members of the Kodi open source community. Therefore, add-ons do not come “out of the box” with any official version of Kodi.
 
-The __RASPBERRY PI__ is <br>a credit-card-sized, low-cost computer that can plug into your TV and deliver high-definition video. It is a capable little computer which can be used in electronics projects, and for many of the things that your desktop PC does, like spreadsheets, word processing, browsing the internet, and playing games.  
+__RASPBERRY PI__<br> 
+The Raspberry Pi is a credit-card-sized, low-cost computer that can plug into your TV and deliver high-definition video. It is a capable little computer which can be used in electronics projects, and for many of the things that your desktop PC does, like spreadsheets, word processing, browsing the internet, and playing games.  
 The RPI3 is one of the newest versions of the Raspberry Pi. It has support for internal WiFi and bluetooth which the previous version B+ did not have.
 <br><br>
 Things you will need:
