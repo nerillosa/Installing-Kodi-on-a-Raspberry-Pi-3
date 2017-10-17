@@ -2,12 +2,10 @@
 
 # Detailed procedure to install Kodi media player on a RPI3
 
-
-__KODI__
 <br><br>
 <img src="/images/kodi1.jpg" width="750">
 
-Kodi is free, open-source software designed specifically with home entertainment in mind – and it's perfect if you're a fan of movies, sports, films and TV shows. Although it was originally created for the Microsoft Xbox and called Xbox Media Center (XBMC), Kodi has continued to evolve, spawning a community of its own.
+__KODI__ is free, open-source software designed specifically with home entertainment in mind – and it's perfect if you're a fan of movies, sports, films and TV shows. Although it was originally created for the Microsoft Xbox and called Xbox Media Center (XBMC), Kodi has continued to evolve, spawning a community of its own.
 Unlike services like Chromecast or Plex, Kodi is managed by the non-profit XBMC Foundation, and it's constantly being modified and upgraded by countless of coders around the world.
 
 __RASPBERRY PI 3__
