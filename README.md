@@ -175,10 +175,10 @@ Replace that line with "auth-user-pass pswfile".
 * sudo nano US_West.conf
 * replace "auth-user-pass" with "auth-user-pass pswfile". Omit the double quotes.
 * Add the following lines after the previous line:<br> 
-  auth-nocache
-  script-security 2
-  up /etc/openvpn/update-resolv-conf
-  down /etc/openvpn/update-resolv-conf
+  auth-nocache<br>
+  script-security 2<br>
+  up /etc/openvpn/update-resolv-conf<br>
+  down /etc/openvpn/update-resolv-conf<br>
 * save the file: Ctrl-X -> Y --> Enter
 
 The conf file should look similar to the following snapshot. Ther modified/new lines are highlighted.
