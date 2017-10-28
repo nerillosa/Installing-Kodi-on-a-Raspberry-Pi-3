@@ -126,7 +126,7 @@ Add the following line at the end of the script and save the file. <br>
 __/usr/bin/kodi-standalone__<br>
 
 The startup script always runs on boot-up and the line above will execute last and launch Kodi.<br>
-Reboot your RPI3 _(sudo reboot now)_. Kodi should launch automatically at the end of boot-up.<br>
+Reboot your RPI3 _(sudo reboot now)_. Kodi should launch automatically at the end of boot-up.<br><br>
 If at some point you want to go to the Linux desktop, you can always click on the Power Options button at the top left of the screen and click on "Exit". This will exit the Kodi application.
 <br><br>
 <img src="/images/kodi.jpg" width="750">
@@ -175,14 +175,10 @@ Replace that line with "auth-user-pass pswfile".
 
 * sudo nano US_West.conf
 * replace "auth-user-pass" with "auth-user-pass pswfile". Omit the double quotes.
-* Add the following lines after the previous line:<br> 
-  auth-nocache<br>
-  script-security 2<br>
-  up /etc/openvpn/update-resolv-conf<br>
-  down /etc/openvpn/update-resolv-conf<br>
+* Add the following lines after the previous line:<br>auth-nocache<br>script-security 2<br>up /etc/openvpn/update-resolv-conf<br>down /etc/openvpn/update-resolv-conf<br>
 * save the file: Ctrl-X -> Y --> Enter
 
-The conf file should look similar to the following snapshot. Ther modified/new lines are highlighted.
+The conf file should look similar to the following snapshot. The modified/new lines are highlighted.
 <br><br>
 <img src="/images/conf_file.JPG" width="500">
 
