@@ -126,7 +126,8 @@ Add the following line at the end of the script and save the file. <br>
 __/usr/bin/kodi-standalone__<br>
 
 The startup script always runs on boot-up and the line above will execute last and launch Kodi.<br>
-Reboot your RPI3 _(sudo reboot now)_. Kodi should launch automatically at the end of boot-up.
+Reboot your RPI3 _(sudo reboot now)_. Kodi should launch automatically at the end of boot-up.<br>
+If at some point you want to go to the Linux desktop, you can always click on the Power Options button at the top left of the screen and click on "Exit". This will exit the Kodi application.
 <br><br>
 <img src="/images/kodi.jpg" width="750">
 
